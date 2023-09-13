@@ -26,7 +26,7 @@ class HomeCoordinator {
         self.window.makeKeyAndVisible()
     }
     
-    func navigateToUser() {
+    func navigateToUser(user: UserViewModel) {
         
     }
 }

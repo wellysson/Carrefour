@@ -7,10 +7,29 @@
 
 import Foundation
 
-class HomeViewModel {
-    weak var coordinator: HomeCoordinator?
+protocol HomeViewModelDelegate: AnyObject {
+    func reloadData()
+}
 
-    func navigateToRegistration() {
-        coordinator?.navigateToUser()
+class HomeViewModel {
+    var users: [UserViewModel]?
+    
+    weak var coordinator: HomeCoordinator?
+    weak var delegate: HomeViewModelDelegate?
+
+    func fetchUsers() {
+        GitHubAPI.getUsers(completion: { [weak self] users in
+            guard let self = self else { return }
+            
+            self.users = users.compactMap({ user in
+                UserViewModel(user: user)
+            })
+            
+            self.delegate?.reloadData()
+        })
+    }
+    
+    func navigateToUser(user: UserViewModel) {
+        coordinator?.navigateToUser(user: user)
     }
 }

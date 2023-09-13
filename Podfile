@@ -7,7 +7,7 @@ use_frameworks!
 target 'desafio-carrefour' do
   pod 'Alamofire', '~> 5.8'
   pod 'ObjectMapper', '~> 4.2'
-  pod 'AlamofireImage', '~> 4.2'
+  pod 'SDWebImage', '5.12.0'
 end
 
 post_install do |installer|

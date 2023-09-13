@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="desafio_carrefour" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="jnQ-XJ-JHT" id="1se-O6-zog"/>
                 <outlet property="view" destination="iN0-l3-epB" id="eE2-8f-gje"/>
             </connections>
         </placeholder>
@@ -17,14 +18,49 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemGray4Color"/>
-            <point key="canvasLocation" x="102" y="21"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIt-2D-SIR">
+                    <rect key="frame" x="0.0" y="50" width="375" height="762"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jnQ-XJ-JHT">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="762"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jnQ-XJ-JHT" secondAttribute="trailing" id="Gbr-Gl-mZg"/>
+                        <constraint firstItem="jnQ-XJ-JHT" firstAttribute="top" secondItem="KIt-2D-SIR" secondAttribute="top" id="Y4J-vR-lmk"/>
+                        <constraint firstItem="jnQ-XJ-JHT" firstAttribute="leading" secondItem="KIt-2D-SIR" secondAttribute="leading" id="fY5-XP-UQA"/>
+                        <constraint firstAttribute="bottom" secondItem="jnQ-XJ-JHT" secondAttribute="bottom" id="jeL-eF-zpj"/>
+                    </constraints>
+                </view>
+                <navigationBar contentMode="scaleToFill" id="lBs-Gg-WEC">
+                    <rect key="frame" x="0.0" y="41" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <navigationItem title="Usuários" id="JLw-aN-sDz"/>
+                    </items>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="kmL-Y0-2X3"/>
+                    </connections>
+                </navigationBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="xZf-vr-uGE"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KIt-2D-SIR" secondAttribute="trailing" id="VEi-sB-IFe"/>
+                <constraint firstAttribute="bottom" secondItem="KIt-2D-SIR" secondAttribute="bottom" id="XV1-KN-mtA"/>
+                <constraint firstItem="KIt-2D-SIR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bhf-tY-EA9"/>
+                <constraint firstItem="KIt-2D-SIR" firstAttribute="top" secondItem="xZf-vr-uGE" secondAttribute="top" id="gsA-6P-Yjg"/>
+            </constraints>
+            <point key="canvasLocation" x="101.59999999999999" y="20.689655172413794"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
