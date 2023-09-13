@@ -11,6 +11,7 @@ import UIKit
 class HomeCoordinator {
     private let window: UIWindow
     private var navigationController: UINavigationController?
+    var userDetailCoordinator: UserDetailCoordinator?
 
     init(window: UIWindow) {
         self.window = window
@@ -27,6 +28,8 @@ class HomeCoordinator {
     }
     
     func navigateToUser(user: UserViewModel) {
-        
+        guard let login = user.login else { return }
+        self.userDetailCoordinator = UserDetailCoordinator(navigationController: self.navigationController, login: login)
+        self.userDetailCoordinator?.start()
     }
 }

@@ -26,9 +26,32 @@ class GitHubAPI {
             case .failure(let error):
                 print("Erro: \(error)")
             }
-            print("Request: \(String(describing: response.request))")   // original url request
-            print("Response: \(String(describing: response.response))") // http url response
-            print("Result: \(response.result)")                         // response serialization result
+//            print("Request: \(String(describing: response.request))")
+//            print("Response: \(String(describing: response.response))")
+//            print("Result: \(response.result)")
+                        
+        }
+    }
+    
+    static func getUserDetail(userLogin: String, completion: @escaping (UserDetail) -> Void) {
+        AF.request("https://api.github.com/users/\(userLogin)").responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                do {
+                    if let userDetail = Mapper<UserDetail>().map(JSONObject: value) {
+                        completion(userDetail)
+                    } else {
+                        print("Erro ao fazer o mapeamento JSON")
+                    }
+               } catch {
+                   print("Erro ao fazer o parse JSON: \(error)")
+               }
+            case .failure(let error):
+                print("Erro: \(error)")
+            }
+//            print("Request: \(String(describing: response.request))")
+//            print("Response: \(String(describing: response.response))")
+//            print("Result: \(response.result)")
                         
         }
     }
