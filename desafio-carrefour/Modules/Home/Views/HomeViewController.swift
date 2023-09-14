@@ -9,7 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var filterTextField: UITextField!
+
     var viewModel: HomeViewModel?
     
     override func viewDidLoad() {
@@ -19,6 +20,11 @@ class HomeViewController: UIViewController {
         self.viewModel?.fetchUsers()
 
         self.setupTableView()
+        self.filterTextField.addTarget(self, action: #selector(filterTextFieldDidChange(_:)), for: .editingChanged)
+    }
+    
+    @objc func filterTextFieldDidChange(_ textField: UITextField) {
+        self.viewModel?.filterByName(name: textField.text ?? "")
     }
     
     func setupTableView() {

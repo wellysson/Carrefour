@@ -13,6 +13,8 @@ protocol HomeViewModelDelegate: AnyObject {
 
 class HomeViewModel {
     var users: [UserViewModel]?
+    var usersOriginal: [UserViewModel]?
+    var filterName: String = ""
     
     weak var coordinator: HomeCoordinator?
     weak var delegate: HomeViewModelDelegate?
@@ -24,9 +26,10 @@ class HomeViewModel {
             guard let self = self else { return }
             
             if users.count > 0 {
-                self.users = users.compactMap({ user in
+                self.usersOriginal = users.compactMap({ user in
                     UserViewModel(user: user)
                 })
+                self.filterByName(name: self.filterName)
                 
                 self.delegate?.reloadData()
             } else {
@@ -37,5 +40,15 @@ class HomeViewModel {
     
     func navigateToUser(user: UserViewModel) {
         coordinator?.navigateToUser(user: user)
+    }
+    
+    func filterByName(name: String) {
+        self.filterName = name
+        if name.isEmpty{
+            self.users = self.usersOriginal
+        } else {
+            self.users = self.usersOriginal?.filter { $0.login?.lowercased().contains(name.lowercased()) ?? false }
+        }
+        self.delegate?.reloadData()
     }
 }
