@@ -43,6 +43,7 @@ class UserDetail: Mappable {
     var updatedAt: String?
 
     required init?(map: Map) {}
+    init() {}
 
     func mapping(map: Map) {
         login <- map["login"]

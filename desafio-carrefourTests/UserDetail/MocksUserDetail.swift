@@ -13,3 +13,15 @@ class MockUserDetailCoordinator: UserDetailCoordinator {
         calledServiceError = true
     }
 }
+
+class MockUserDetailViewModel: UserDetailViewModel {
+    var userDetailTest: UserDetail?
+    func setUser(userDetail: UserDetail) {
+        userDetailTest = userDetail
+    }
+    
+    override func fetchUserDetail() {
+        guard let userDetailTest = userDetailTest else { return }
+        self.updateData(userDetail: userDetailTest)
+    }
+}
