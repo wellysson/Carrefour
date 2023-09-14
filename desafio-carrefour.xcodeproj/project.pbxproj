@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27381677221DB6428E4A901B /* Pods_desafio_carrefour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE934D2DCE74CA5C65585B /* Pods_desafio_carrefour.framework */; };
+		5797F558A52FFAE5B472467F /* Pods_desafio_carrefour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6F525D84961467CA8E96DC /* Pods_desafio_carrefour.framework */; };
 		C16C59462AB1E98C00B2575E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C59452AB1E98C00B2575E /* AppDelegate.swift */; };
 		C16C59482AB1E98C00B2575E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C59472AB1E98C00B2575E /* SceneDelegate.swift */; };
 		C16C594F2AB1E98E00B2575E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16C594E2AB1E98E00B2575E /* Assets.xcassets */; };
@@ -55,6 +55,9 @@
 		C189997E2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C189997A2AB2954A009EC23B /* RepositoriesTableViewCell.xib */; };
 		C189997F2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C189997A2AB2954A009EC23B /* RepositoriesTableViewCell.xib */; };
 		C18999802AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C189997A2AB2954A009EC23B /* RepositoriesTableViewCell.xib */; };
+		C1B9D3672AB366A40082D831 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A62AB22B4E00548639 /* GitHubAPI.swift */; };
+		C1B9D3682AB366A50082D831 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A62AB22B4E00548639 /* GitHubAPI.swift */; };
+		C1B9D36A2AB368930082D831 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B9D3692AB368930082D831 /* HomeViewModelTests.swift */; };
 		C1D1F8A72AB22B4E00548639 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A62AB22B4E00548639 /* GitHubAPI.swift */; };
 		C1D1F8A92AB23D7A00548639 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A82AB23D7A00548639 /* User.swift */; };
 		C1D1F8AA2AB23D7A00548639 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A82AB23D7A00548639 /* User.swift */; };
@@ -118,8 +121,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D74B280EA7301F73C651331 /* Pods-desafio-carrefour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-carrefour.debug.xcconfig"; path = "Target Support Files/Pods-desafio-carrefour/Pods-desafio-carrefour.debug.xcconfig"; sourceTree = "<group>"; };
-		7F04A9501D68A8DC65AB72BD /* Pods-desafio-carrefour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-carrefour.release.xcconfig"; path = "Target Support Files/Pods-desafio-carrefour/Pods-desafio-carrefour.release.xcconfig"; sourceTree = "<group>"; };
+		0B30EF3CC4737B9F011F5905 /* Pods-desafio-carrefour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-carrefour.release.xcconfig"; path = "Target Support Files/Pods-desafio-carrefour/Pods-desafio-carrefour.release.xcconfig"; sourceTree = "<group>"; };
+		789BAD97CB812D37B2E3BE8D /* Pods-desafio-carrefour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-carrefour.debug.xcconfig"; path = "Target Support Files/Pods-desafio-carrefour/Pods-desafio-carrefour.debug.xcconfig"; sourceTree = "<group>"; };
 		C16C59422AB1E98C00B2575E /* desafio-carrefour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-carrefour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16C59452AB1E98C00B2575E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C16C59472AB1E98C00B2575E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 		C18999752AB28E1F009EC23B /* RepositoriesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesCoordinator.swift; sourceTree = "<group>"; };
 		C18999792AB2954A009EC23B /* RepositoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewCell.swift; sourceTree = "<group>"; };
 		C189997A2AB2954A009EC23B /* RepositoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesTableViewCell.xib; sourceTree = "<group>"; };
+		C1B9D3692AB368930082D831 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		C1D1F8A62AB22B4E00548639 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		C1D1F8A82AB23D7A00548639 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C1D1F8AC2AB2483C00548639 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -160,7 +164,7 @@
 		C1FAA30C2AB2622F0072B7E7 /* UserDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailView.xib; sourceTree = "<group>"; };
 		C1FAA3102AB262E00072B7E7 /* UserDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCoordinator.swift; sourceTree = "<group>"; };
 		C1FAA3142AB281CA0072B7E7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		D1CE934D2DCE74CA5C65585B /* Pods_desafio_carrefour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_carrefour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6F525D84961467CA8E96DC /* Pods_desafio_carrefour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_carrefour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27381677221DB6428E4A901B /* Pods_desafio_carrefour.framework in Frameworks */,
+				5797F558A52FFAE5B472467F /* Pods_desafio_carrefour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,18 +196,10 @@
 		1FBE4813EF7012079F09E331 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5D74B280EA7301F73C651331 /* Pods-desafio-carrefour.debug.xcconfig */,
-				7F04A9501D68A8DC65AB72BD /* Pods-desafio-carrefour.release.xcconfig */,
+				789BAD97CB812D37B2E3BE8D /* Pods-desafio-carrefour.debug.xcconfig */,
+				0B30EF3CC4737B9F011F5905 /* Pods-desafio-carrefour.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		47496B3CF4192F8459263AA5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D1CE934D2DCE74CA5C65585B /* Pods_desafio_carrefour.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C16C59392AB1E98C00B2575E = {
@@ -215,7 +211,7 @@
 				C16C59912AB1FC3700B2575E /* .gitignore */,
 				C16C59432AB1E98C00B2575E /* Products */,
 				1FBE4813EF7012079F09E331 /* Pods */,
-				47496B3CF4192F8459263AA5 /* Frameworks */,
+				D4335C91FF46ED156AB9133B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				C16C598B2AB1F26D00B2575E /* HomeCoordinatorTests.swift */,
+				C1B9D3692AB368930082D831 /* HomeViewModelTests.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -454,6 +451,14 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		D4335C91FF46ED156AB9133B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F525D84961467CA8E96DC /* Pods_desafio_carrefour.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -461,11 +466,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C16C596C2AB1E98F00B2575E /* Build configuration list for PBXNativeTarget "desafio-carrefour" */;
 			buildPhases = (
-				74291A0C38DA9466C0728595 /* [CP] Check Pods Manifest.lock */,
+				D82961FFB56C1F6685875152 /* [CP] Check Pods Manifest.lock */,
 				C16C593E2AB1E98C00B2575E /* Sources */,
 				C16C593F2AB1E98C00B2575E /* Frameworks */,
 				C16C59402AB1E98C00B2575E /* Resources */,
-				528A705726B612D27CEC21FE /* [CP] Embed Pods Frameworks */,
+				2562534DA23B50A0C69419E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -606,7 +611,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		528A705726B612D27CEC21FE /* [CP] Embed Pods Frameworks */ = {
+		2562534DA23B50A0C69419E5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -623,7 +628,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafio-carrefour/Pods-desafio-carrefour-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		74291A0C38DA9466C0728595 /* [CP] Check Pods Manifest.lock */ = {
+		D82961FFB56C1F6685875152 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -687,9 +692,11 @@
 				C16C595D2AB1E98F00B2575E /* desafio_carrefourTests.swift in Sources */,
 				C189996F2AB28C97009EC23B /* RepositoriesViewController.swift in Sources */,
 				C1DB41622AB33AC300D3E650 /* ProgressHud.swift in Sources */,
+				C1B9D36A2AB368930082D831 /* HomeViewModelTests.swift in Sources */,
 				C189997C2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */,
 				C189995F2AB286D0009EC23B /* Repository.swift in Sources */,
 				C1FAA30A2AB261800072B7E7 /* UserDetailViewController.swift in Sources */,
+				C1B9D3672AB366A40082D831 /* GitHubAPI.swift in Sources */,
 				C16C598C2AB1F26D00B2575E /* HomeCoordinatorTests.swift in Sources */,
 				C1FAA3162AB281CA0072B7E7 /* String.swift in Sources */,
 				C1FAA3032AB25DD30072B7E7 /* UserDetail.swift in Sources */,
@@ -718,6 +725,7 @@
 				C189997D2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */,
 				C18999602AB286D0009EC23B /* Repository.swift in Sources */,
 				C1FAA30B2AB261800072B7E7 /* UserDetailViewController.swift in Sources */,
+				C1B9D3682AB366A50082D831 /* GitHubAPI.swift in Sources */,
 				C16C59852AB1EF3800B2575E /* HomeCoordinator.swift in Sources */,
 				C1FAA3172AB281CA0072B7E7 /* String.swift in Sources */,
 				C1FAA3042AB25DD30072B7E7 /* UserDetail.swift in Sources */,
@@ -810,7 +818,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -864,7 +872,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -876,7 +884,7 @@
 		};
 		C16C596D2AB1E98F00B2575E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D74B280EA7301F73C651331 /* Pods-desafio-carrefour.debug.xcconfig */;
+			baseConfigurationReference = 789BAD97CB812D37B2E3BE8D /* Pods-desafio-carrefour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -904,7 +912,7 @@
 		};
 		C16C596E2AB1E98F00B2575E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F04A9501D68A8DC65AB72BD /* Pods-desafio-carrefour.release.xcconfig */;
+			baseConfigurationReference = 0B30EF3CC4737B9F011F5905 /* Pods-desafio-carrefour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -932,6 +940,7 @@
 		};
 		C16C59702AB1E98F00B2575E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 789BAD97CB812D37B2E3BE8D /* Pods-desafio-carrefour.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -951,6 +960,7 @@
 		};
 		C16C59712AB1E98F00B2575E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B30EF3CC4737B9F011F5905 /* Pods-desafio-carrefour.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -970,6 +980,7 @@
 		};
 		C16C59732AB1E98F00B2575E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 789BAD97CB812D37B2E3BE8D /* Pods-desafio-carrefour.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -987,6 +998,7 @@
 		};
 		C16C59742AB1E98F00B2575E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B30EF3CC4737B9F011F5905 /* Pods-desafio-carrefour.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

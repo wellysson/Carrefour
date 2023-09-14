@@ -29,6 +29,7 @@ class User: Mappable {
     var siteAdmin: Bool?
 
     required init?(map: Map) {}
+    init() {}
 
     func mapping(map: Map) {
         login <- map["login"]
