@@ -1,40 +1,35 @@
 //
-//  HomeTableViewCell.swift
+//  RepositoriesTableViewCell.swift
 //  desafio-carrefour
 //
 //  Created by Wellysson Avelar on 13/09/23.
 //
 
 import UIKit
-import SDWebImage
 
-class HomeTableViewCell: UITableViewCell {
+class RepositoriesTableViewCell: UITableViewCell {
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
-    @IBOutlet weak var avatarImageView: UIImageView!
-    @IBOutlet weak var loginLabel: UILabel!
-
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
     }
     
-    func configure(with viewModel: UserViewModel) {
-        loginLabel.text = viewModel.login
-        if let avatarURL = viewModel.avatarUrl {
-            self.avatarImageView.sd_setImage(with: avatarURL)
-        }
+    func configure(with repository: RepositoryViewModel) {
+        self.nameLabel.text = repository.name
+        self.descriptionLabel.text = repository.description
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
+
         self.containerView.backgroundColor = selected ? UIColor(rgba: "#EEEEEE") : UIColor(rgba: "#FFFFFF")
-        
     }
     
     override func prepareForReuse() {
-        self.avatarImageView.image = nil
-        self.loginLabel.text = nil
+        self.nameLabel.text = nil
+        self.descriptionLabel.text = nil
     }
-    
 }

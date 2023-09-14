@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SafariServices
 
 class RepositoriesCoordinator {
     weak var navigationController: UINavigationController?
@@ -27,6 +28,9 @@ class RepositoriesCoordinator {
     }
     
     func navigateToRepository(url: URL) {
-        //abrir browser
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            let safariViewController = SFSafariViewController(url: url)
+            windowScene.windows.first?.rootViewController?.present(safariViewController, animated: true, completion: nil)
+        }
     }
 }

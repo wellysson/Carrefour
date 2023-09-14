@@ -22,9 +22,9 @@ class RepositoriesViewController: UIViewController {
     }
     
     private func setupTableView() {
-//        tableView.delegate = self
-//        tableView.dataSource = self
-//        tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "RepositoriesTableViewCell", bundle: nil), forCellReuseIdentifier: "RepositoriesTableViewCell")
     }
 
 }
@@ -35,9 +35,10 @@ extension RepositoriesViewController: UITableViewDelegate, UITableViewDataSource
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
-        let repositoryViewModel = self.viewModel?.repositories?[indexPath.row]
-//        cell.configure(with: userViewModel!)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoriesTableViewCell", for: indexPath) as! RepositoriesTableViewCell
+        if let repositoryViewModel = self.viewModel?.repositories?[indexPath.row] {
+            cell.configure(with: repositoryViewModel)
+        }
         return cell
     }
     
@@ -49,11 +50,14 @@ extension RepositoriesViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 120
     }
 }
 
 extension RepositoriesViewController: RepositoriesViewModelDelegate {
     func reloadData() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }

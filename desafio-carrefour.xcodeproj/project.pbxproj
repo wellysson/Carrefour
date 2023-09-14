@@ -49,6 +49,12 @@
 		C18999762AB28E1F009EC23B /* RepositoriesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18999752AB28E1F009EC23B /* RepositoriesCoordinator.swift */; };
 		C18999772AB28E1F009EC23B /* RepositoriesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18999752AB28E1F009EC23B /* RepositoriesCoordinator.swift */; };
 		C18999782AB28E1F009EC23B /* RepositoriesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18999752AB28E1F009EC23B /* RepositoriesCoordinator.swift */; };
+		C189997B2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18999792AB2954A009EC23B /* RepositoriesTableViewCell.swift */; };
+		C189997C2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18999792AB2954A009EC23B /* RepositoriesTableViewCell.swift */; };
+		C189997D2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18999792AB2954A009EC23B /* RepositoriesTableViewCell.swift */; };
+		C189997E2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C189997A2AB2954A009EC23B /* RepositoriesTableViewCell.xib */; };
+		C189997F2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C189997A2AB2954A009EC23B /* RepositoriesTableViewCell.xib */; };
+		C18999802AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C189997A2AB2954A009EC23B /* RepositoriesTableViewCell.xib */; };
 		C1D1F8A72AB22B4E00548639 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A62AB22B4E00548639 /* GitHubAPI.swift */; };
 		C1D1F8A92AB23D7A00548639 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A82AB23D7A00548639 /* User.swift */; };
 		C1D1F8AA2AB23D7A00548639 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A82AB23D7A00548639 /* User.swift */; };
@@ -128,6 +134,8 @@
 		C189996D2AB28C97009EC23B /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		C18999712AB28CAB009EC23B /* RepositoriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesView.xib; sourceTree = "<group>"; };
 		C18999752AB28E1F009EC23B /* RepositoriesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesCoordinator.swift; sourceTree = "<group>"; };
+		C18999792AB2954A009EC23B /* RepositoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewCell.swift; sourceTree = "<group>"; };
+		C189997A2AB2954A009EC23B /* RepositoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesTableViewCell.xib; sourceTree = "<group>"; };
 		C1D1F8A62AB22B4E00548639 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		C1D1F8A82AB23D7A00548639 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C1D1F8AC2AB2483C00548639 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -323,6 +331,8 @@
 			children = (
 				C189996D2AB28C97009EC23B /* RepositoriesViewController.swift */,
 				C18999712AB28CAB009EC23B /* RepositoriesView.xib */,
+				C18999792AB2954A009EC23B /* RepositoriesTableViewCell.swift */,
+				C189997A2AB2954A009EC23B /* RepositoriesTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -520,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FAA30D2AB2622F0072B7E7 /* UserDetailView.xib in Resources */,
+				C189997E2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */,
 				C16C59922AB1FC3700B2575E /* .gitignore in Resources */,
 				C16C59522AB1E98E00B2575E /* LaunchScreen.storyboard in Resources */,
 				C16C594F2AB1E98E00B2575E /* Assets.xcassets in Resources */,
@@ -534,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FAA30E2AB2622F0072B7E7 /* UserDetailView.xib in Resources */,
+				C189997F2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */,
 				C16C59932AB1FC3700B2575E /* .gitignore in Resources */,
 				C1D1F8B62AB24BEA00548639 /* HomeTableViewCell.xib in Resources */,
 				C16C59802AB1EE1800B2575E /* HomeView.xib in Resources */,
@@ -546,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FAA30F2AB2622F0072B7E7 /* UserDetailView.xib in Resources */,
+				C18999802AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */,
 				C16C59942AB1FC3700B2575E /* .gitignore in Resources */,
 				C1D1F8B72AB24BEA00548639 /* HomeTableViewCell.xib in Resources */,
 				C16C59812AB1EE1800B2575E /* HomeView.xib in Resources */,
@@ -615,6 +628,7 @@
 				C1FAA3112AB262E00072B7E7 /* UserDetailCoordinator.swift in Sources */,
 				C18999662AB28B5B009EC23B /* RepositoryViewModel.swift in Sources */,
 				C1D1F8B22AB24BEA00548639 /* HomeTableViewCell.swift in Sources */,
+				C189997B2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */,
 				C16C597B2AB1EDD000B2575E /* HomeViewController.swift in Sources */,
 				C189995E2AB286D0009EC23B /* Repository.swift in Sources */,
 				C1D1F8A92AB23D7A00548639 /* User.swift in Sources */,
@@ -634,6 +648,7 @@
 				C1FAA3012AB25DCF0072B7E7 /* UserDetailViewModel.swift in Sources */,
 				C16C595D2AB1E98F00B2575E /* desafio_carrefourTests.swift in Sources */,
 				C189996F2AB28C97009EC23B /* RepositoriesViewController.swift in Sources */,
+				C189997C2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */,
 				C189995F2AB286D0009EC23B /* Repository.swift in Sources */,
 				C1FAA30A2AB261800072B7E7 /* UserDetailViewController.swift in Sources */,
 				C16C598C2AB1F26D00B2575E /* HomeCoordinatorTests.swift in Sources */,
@@ -660,6 +675,7 @@
 				C1FAA3022AB25DCF0072B7E7 /* UserDetailViewModel.swift in Sources */,
 				C16C59692AB1E98F00B2575E /* desafio_carrefourUITestsLaunchTests.swift in Sources */,
 				C18999702AB28C97009EC23B /* RepositoriesViewController.swift in Sources */,
+				C189997D2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */,
 				C18999602AB286D0009EC23B /* Repository.swift in Sources */,
 				C1FAA30B2AB261800072B7E7 /* UserDetailViewController.swift in Sources */,
 				C16C59852AB1EF3800B2575E /* HomeCoordinator.swift in Sources */,

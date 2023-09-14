@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoriesViewController" customModule="desafio_carrefour" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="gdF-tf-8JQ" id="utr-HQ-hQu"/>
                 <outlet property="view" destination="iN0-l3-epB" id="JXc-0J-gNM"/>
             </connections>
         </placeholder>
@@ -17,12 +18,27 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gdF-tf-8JQ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gdF-tf-8JQ" secondAttribute="bottom" id="63G-2t-X4u"/>
+                <constraint firstItem="gdF-tf-8JQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Kxf-vM-pK4"/>
+                <constraint firstAttribute="trailing" secondItem="gdF-tf-8JQ" secondAttribute="trailing" id="dqo-35-bLk"/>
+                <constraint firstItem="gdF-tf-8JQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mgy-Fc-OBN"/>
+            </constraints>
             <point key="canvasLocation" x="-102" y="21"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
