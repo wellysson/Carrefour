@@ -89,6 +89,7 @@ class Repository: Mappable {
     var defaultBranch: String?
 
     required init?(map: Map) {}
+    init() {}
 
     func mapping(map: Map) {
         id <- map["id"]

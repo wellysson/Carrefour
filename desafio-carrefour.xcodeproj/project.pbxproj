@@ -49,6 +49,8 @@
 		C1B9D36A2AB368930082D831 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B9D3692AB368930082D831 /* HomeViewModelTests.swift */; };
 		C1C355F22AB3923A009283B3 /* UserDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C355F12AB3923A009283B3 /* UserDetailViewModelTests.swift */; };
 		C1C355F42AB396E5009283B3 /* UserDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C355F32AB396E5009283B3 /* UserDetailViewControllerTests.swift */; };
+		C1C355F72AB39A24009283B3 /* RepositoriesCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C355F62AB39A24009283B3 /* RepositoriesCoordinatorTests.swift */; };
+		C1C355F92AB39CEA009283B3 /* RepositoriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C355F82AB39CEA009283B3 /* RepositoriesViewModelTests.swift */; };
 		C1D1F8A72AB22B4E00548639 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A62AB22B4E00548639 /* GitHubAPI.swift */; };
 		C1D1F8A92AB23D7A00548639 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A82AB23D7A00548639 /* User.swift */; };
 		C1D1F8AA2AB23D7A00548639 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1F8A82AB23D7A00548639 /* User.swift */; };
@@ -123,6 +125,8 @@
 		C1B9D3692AB368930082D831 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		C1C355F12AB3923A009283B3 /* UserDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModelTests.swift; sourceTree = "<group>"; };
 		C1C355F32AB396E5009283B3 /* UserDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		C1C355F62AB39A24009283B3 /* RepositoriesCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesCoordinatorTests.swift; sourceTree = "<group>"; };
+		C1C355F82AB39CEA009283B3 /* RepositoriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModelTests.swift; sourceTree = "<group>"; };
 		C1D1F8A62AB22B4E00548639 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		C1D1F8A82AB23D7A00548639 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C1D1F8AC2AB2483C00548639 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 		C16C595B2AB1E98F00B2575E /* desafio-carrefourTests */ = {
 			isa = PBXGroup;
 			children = (
+				C1C355F52AB39A14009283B3 /* Repositories */,
 				C11F9FFE2AB385A5001F2E68 /* UserDetail */,
 				C16C598A2AB1F20800B2575E /* Home */,
 				C16C595C2AB1E98F00B2575E /* desafio_carrefourTests.swift */,
@@ -330,6 +335,15 @@
 				C189995D2AB286D0009EC23B /* Repository.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C1C355F52AB39A14009283B3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C1C355F62AB39A24009283B3 /* RepositoriesCoordinatorTests.swift */,
+				C1C355F82AB39CEA009283B3 /* RepositoriesViewModelTests.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		C1CED28A2AB337B000C25D06 /* Modules */ = {
@@ -623,6 +637,7 @@
 				C18999632AB28876009EC23B /* RepositoriesViewModel.swift in Sources */,
 				C1FAA3012AB25DCF0072B7E7 /* UserDetailViewModel.swift in Sources */,
 				C16C595D2AB1E98F00B2575E /* desafio_carrefourTests.swift in Sources */,
+				C1C355F92AB39CEA009283B3 /* RepositoriesViewModelTests.swift in Sources */,
 				C189996F2AB28C97009EC23B /* RepositoriesViewController.swift in Sources */,
 				C1DB41622AB33AC300D3E650 /* ProgressHud.swift in Sources */,
 				C1B9D36A2AB368930082D831 /* HomeViewModelTests.swift in Sources */,
@@ -649,6 +664,7 @@
 				C1FAA3122AB262E00072B7E7 /* UserDetailCoordinator.swift in Sources */,
 				C11FA0002AB385C9001F2E68 /* UserDetailCoordinatorTest.swift in Sources */,
 				C16C59882AB1F0C100B2575E /* HomeViewModel.swift in Sources */,
+				C1C355F72AB39A24009283B3 /* RepositoriesCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
