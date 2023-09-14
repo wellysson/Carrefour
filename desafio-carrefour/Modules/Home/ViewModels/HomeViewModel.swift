@@ -23,11 +23,15 @@ class HomeViewModel {
             ProgressHud.shared.hide()
             guard let self = self else { return }
             
-            self.users = users.compactMap({ user in
-                UserViewModel(user: user)
-            })
-            
-            self.delegate?.reloadData()
+            if users.count > 0 {
+                self.users = users.compactMap({ user in
+                    UserViewModel(user: user)
+                })
+                
+                self.delegate?.reloadData()
+            } else {
+                self.coordinator?.showServiceError()
+            }
         })
     }
     

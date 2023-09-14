@@ -60,10 +60,17 @@ class UserDetailViewModel {
         ProgressHud.shared.show()
         GitHubAPI.getUserDetail(userLogin: login, completion: { [weak self] userDetail in
             ProgressHud.shared.hide()
-            guard let self = self else { return }
+            guard let self = self, let userDetail = userDetail else {
+                self?.coordinator?.showServiceError()
+                return
+            }
             
-            self.updateData(userDetail: userDetail)
-            self.delegate?.reloadData()
+            if userDetail.id != nil {
+                self.updateData(userDetail: userDetail)
+                self.delegate?.reloadData()
+            } else {
+                self.coordinator?.showServiceError()
+            }
         })
     }
     

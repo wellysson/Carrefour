@@ -29,11 +29,14 @@ class RepositoriesViewModel {
             ProgressHud.shared.hide()
             guard let self = self else { return }
             
-            self.repositories = repositories.compactMap({ repository in
-                RepositoryViewModel(repository: repository)
-            })
-            
-            self.delegate?.reloadData()
+            if repositories.count > 0 {
+                self.repositories = repositories.compactMap({ repository in
+                    RepositoryViewModel(repository: repository)
+                })
+                self.delegate?.reloadData()
+            } else {
+                self.coordinator?.showServiceError()
+            }
         })
     }
     

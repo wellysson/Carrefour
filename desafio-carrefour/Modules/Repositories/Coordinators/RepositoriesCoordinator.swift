@@ -33,4 +33,12 @@ class RepositoriesCoordinator {
             windowScene.windows.first?.rootViewController?.present(safariViewController, animated: true, completion: nil)
         }
     }
+    
+    func showServiceError() {
+        let alert = UIAlertController(title: "Ops!", message: "Não foi possível recuperar os repositórios, tente novamente mais tarde.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] action in
+            self?.navigationController?.popViewController(animated: true)
+        }))
+        navigationController?.present(alert, animated: true, completion: nil)
+    }
 }

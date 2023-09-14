@@ -31,4 +31,12 @@ class UserDetailCoordinator {
         self.repositoriesCoordinator = RepositoriesCoordinator(navigationController: self.navigationController, login: user.login)
         self.repositoriesCoordinator?.start()
     }
+    
+    func showServiceError() {
+        let alert = UIAlertController(title: "Ops!", message: "Não foi possível recuperar o usuário selecionado, tente novamente mais tarde.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] action in
+            self?.navigationController?.popViewController(animated: true)
+        }))
+        self.navigationController?.present(alert, animated: true, completion: nil)
+    }
 }

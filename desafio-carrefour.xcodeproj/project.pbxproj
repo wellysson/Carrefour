@@ -71,9 +71,6 @@
 		C1DB41612AB33AC300D3E650 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB41602AB33AC300D3E650 /* ProgressHud.swift */; };
 		C1DB41622AB33AC300D3E650 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB41602AB33AC300D3E650 /* ProgressHud.swift */; };
 		C1DB41632AB33AC300D3E650 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB41602AB33AC300D3E650 /* ProgressHud.swift */; };
-		C1DB41672AB33B5D00D3E650 /* happyLottery.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41642AB33B5D00D3E650 /* happyLottery.json */; };
-		C1DB41682AB33B5D00D3E650 /* happyLottery.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41642AB33B5D00D3E650 /* happyLottery.json */; };
-		C1DB41692AB33B5D00D3E650 /* happyLottery.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41642AB33B5D00D3E650 /* happyLottery.json */; };
 		C1DB416A2AB33B5D00D3E650 /* loading_spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41652AB33B5D00D3E650 /* loading_spinner.json */; };
 		C1DB416B2AB33B5D00D3E650 /* loading_spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41652AB33B5D00D3E650 /* loading_spinner.json */; };
 		C1DB416C2AB33B5D00D3E650 /* loading_spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41652AB33B5D00D3E650 /* loading_spinner.json */; };
@@ -154,7 +151,6 @@
 		C1D1F8B02AB24BEA00548639 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C1D1F8B12AB24BEA00548639 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		C1DB41602AB33AC300D3E650 /* ProgressHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHud.swift; sourceTree = "<group>"; };
-		C1DB41642AB33B5D00D3E650 /* happyLottery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = happyLottery.json; sourceTree = "<group>"; };
 		C1DB41652AB33B5D00D3E650 /* loading_spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_spinner.json; sourceTree = "<group>"; };
 		C1DB41662AB33B5D00D3E650 /* LottieAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieAnimation.json; sourceTree = "<group>"; };
 		C1FAA2F62AB255F80072B7E7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -397,7 +393,6 @@
 		C1DB415F2AB33A7100D3E650 /* ProgressHud */ = {
 			isa = PBXGroup;
 			children = (
-				C1DB41642AB33B5D00D3E650 /* happyLottery.json */,
 				C1DB41652AB33B5D00D3E650 /* loading_spinner.json */,
 				C1DB41662AB33B5D00D3E650 /* LottieAnimation.json */,
 				C1DB41602AB33AC300D3E650 /* ProgressHud.swift */,
@@ -565,7 +560,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1DB41672AB33B5D00D3E650 /* happyLottery.json in Resources */,
 				C1FAA30D2AB2622F0072B7E7 /* UserDetailView.xib in Resources */,
 				C189997E2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */,
 				C16C59922AB1FC3700B2575E /* .gitignore in Resources */,
@@ -588,7 +582,6 @@
 				C1FAA30E2AB2622F0072B7E7 /* UserDetailView.xib in Resources */,
 				C189997F2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */,
 				C16C59932AB1FC3700B2575E /* .gitignore in Resources */,
-				C1DB41682AB33B5D00D3E650 /* happyLottery.json in Resources */,
 				C1D1F8B62AB24BEA00548639 /* HomeTableViewCell.xib in Resources */,
 				C16C59802AB1EE1800B2575E /* HomeView.xib in Resources */,
 				C18999732AB28CAB009EC23B /* RepositoriesView.xib in Resources */,
@@ -604,7 +597,6 @@
 				C1FAA30F2AB2622F0072B7E7 /* UserDetailView.xib in Resources */,
 				C18999802AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */,
 				C16C59942AB1FC3700B2575E /* .gitignore in Resources */,
-				C1DB41692AB33B5D00D3E650 /* happyLottery.json in Resources */,
 				C1D1F8B72AB24BEA00548639 /* HomeTableViewCell.xib in Resources */,
 				C16C59812AB1EE1800B2575E /* HomeView.xib in Resources */,
 				C18999742AB28CAB009EC23B /* RepositoriesView.xib in Resources */,

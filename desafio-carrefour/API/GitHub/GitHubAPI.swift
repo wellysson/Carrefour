@@ -18,16 +18,18 @@ class GitHubAPI {
                     completion(users)
                 } else {
                     print("Erro ao fazer o mapeamento JSON")
+                    completion([])
                 }
             case .failure(let error):
                 print("Erro: \(error)")
+                completion([])
             }
             print("Request: \(String(describing: response.request))")
             print("Result: \(response.result)")
         }
     }
     
-    static func getUserDetail(userLogin: String, completion: @escaping (UserDetail) -> Void) {
+    static func getUserDetail(userLogin: String, completion: @escaping (UserDetail?) -> Void) {
         AF.request("https://api.github.com/users/\(userLogin)").responseJSON { response in
             switch response.result {
             case .success(let value):
@@ -35,9 +37,11 @@ class GitHubAPI {
                     completion(userDetail)
                 } else {
                     print("Erro ao fazer o mapeamento JSON")
+                    completion(nil)
                 }
             case .failure(let error):
                 print("Erro: \(error)")
+                completion(nil)
             }
             print("Request: \(String(describing: response.request))")
             print("Result: \(response.result)")
@@ -52,9 +56,11 @@ class GitHubAPI {
                     completion(repositories)
                 } else {
                     print("Erro ao fazer o mapeamento JSON")
+                    completion([])
                 }
             case .failure(let error):
                 print("Erro: \(error)")
+                completion([])
             }
             print("Request: \(String(describing: response.request))")
             print("Result: \(response.result)")

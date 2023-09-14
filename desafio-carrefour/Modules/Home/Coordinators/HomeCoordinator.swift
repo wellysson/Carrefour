@@ -32,4 +32,10 @@ class HomeCoordinator {
         self.userDetailCoordinator = UserDetailCoordinator(navigationController: self.navigationController, login: login)
         self.userDetailCoordinator?.start()
     }
+    
+    func showServiceError() {
+        let alert = UIAlertController(title: "Ops!", message: "Não foi possível recuperar os usuários, tente novamente mais tarde.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        navigationController?.present(alert, animated: true, completion: nil)
+    }
 }
