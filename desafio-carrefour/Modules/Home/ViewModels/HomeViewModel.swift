@@ -18,7 +18,9 @@ class HomeViewModel {
     weak var delegate: HomeViewModelDelegate?
 
     func fetchUsers() {
+        ProgressHud.shared.show()
         GitHubAPI.getUsers(completion: { [weak self] users in
+            ProgressHud.shared.hide()
             guard let self = self else { return }
             
             self.users = users.compactMap({ user in

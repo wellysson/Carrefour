@@ -24,7 +24,9 @@ class RepositoriesViewModel {
     
     
     func fetchRepository() {
+        ProgressHud.shared.show()
         GitHubAPI.getRepositories(userLogin: login, completion: { [weak self] repositories in
+            ProgressHud.shared.hide()
             guard let self = self else { return }
             
             self.repositories = repositories.compactMap({ repository in

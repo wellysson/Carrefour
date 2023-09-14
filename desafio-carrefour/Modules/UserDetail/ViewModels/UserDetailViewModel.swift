@@ -57,7 +57,9 @@ class UserDetailViewModel {
     }
     
     func fetchUserDetail() {
+        ProgressHud.shared.show()
         GitHubAPI.getUserDetail(userLogin: login, completion: { [weak self] userDetail in
+            ProgressHud.shared.hide()
             guard let self = self else { return }
             
             self.updateData(userDetail: userDetail)

@@ -49,6 +49,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if decelerate && scrollView.contentOffset.y < 0 {
+            self.viewModel?.fetchUsers()
+        }
+    }
 }
 
 extension HomeViewController: HomeViewModelDelegate {

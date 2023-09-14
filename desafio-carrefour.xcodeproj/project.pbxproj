@@ -68,6 +68,18 @@
 		C1D1F8B52AB24BEA00548639 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D1F8B12AB24BEA00548639 /* HomeTableViewCell.xib */; };
 		C1D1F8B62AB24BEA00548639 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D1F8B12AB24BEA00548639 /* HomeTableViewCell.xib */; };
 		C1D1F8B72AB24BEA00548639 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D1F8B12AB24BEA00548639 /* HomeTableViewCell.xib */; };
+		C1DB41612AB33AC300D3E650 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB41602AB33AC300D3E650 /* ProgressHud.swift */; };
+		C1DB41622AB33AC300D3E650 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB41602AB33AC300D3E650 /* ProgressHud.swift */; };
+		C1DB41632AB33AC300D3E650 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB41602AB33AC300D3E650 /* ProgressHud.swift */; };
+		C1DB41672AB33B5D00D3E650 /* happyLottery.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41642AB33B5D00D3E650 /* happyLottery.json */; };
+		C1DB41682AB33B5D00D3E650 /* happyLottery.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41642AB33B5D00D3E650 /* happyLottery.json */; };
+		C1DB41692AB33B5D00D3E650 /* happyLottery.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41642AB33B5D00D3E650 /* happyLottery.json */; };
+		C1DB416A2AB33B5D00D3E650 /* loading_spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41652AB33B5D00D3E650 /* loading_spinner.json */; };
+		C1DB416B2AB33B5D00D3E650 /* loading_spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41652AB33B5D00D3E650 /* loading_spinner.json */; };
+		C1DB416C2AB33B5D00D3E650 /* loading_spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41652AB33B5D00D3E650 /* loading_spinner.json */; };
+		C1DB416D2AB33B5D00D3E650 /* LottieAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41662AB33B5D00D3E650 /* LottieAnimation.json */; };
+		C1DB416E2AB33B5D00D3E650 /* LottieAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41662AB33B5D00D3E650 /* LottieAnimation.json */; };
+		C1DB416F2AB33B5D00D3E650 /* LottieAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C1DB41662AB33B5D00D3E650 /* LottieAnimation.json */; };
 		C1FAA2F72AB255F80072B7E7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FAA2F62AB255F80072B7E7 /* UIColor.swift */; };
 		C1FAA2FE2AB25D780072B7E7 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FAA2FD2AB25D780072B7E7 /* UserDetail.swift */; };
 		C1FAA3002AB25DCF0072B7E7 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FAA2FF2AB25DCF0072B7E7 /* UserDetailViewModel.swift */; };
@@ -141,6 +153,10 @@
 		C1D1F8AC2AB2483C00548639 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		C1D1F8B02AB24BEA00548639 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C1D1F8B12AB24BEA00548639 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		C1DB41602AB33AC300D3E650 /* ProgressHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHud.swift; sourceTree = "<group>"; };
+		C1DB41642AB33B5D00D3E650 /* happyLottery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = happyLottery.json; sourceTree = "<group>"; };
+		C1DB41652AB33B5D00D3E650 /* loading_spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_spinner.json; sourceTree = "<group>"; };
+		C1DB41662AB33B5D00D3E650 /* LottieAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieAnimation.json; sourceTree = "<group>"; };
 		C1FAA2F62AB255F80072B7E7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		C1FAA2FD2AB25D780072B7E7 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		C1FAA2FF2AB25DCF0072B7E7 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
@@ -221,10 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				C1D1F8A42AB22A1D00548639 /* API */,
+				C1CED28A2AB337B000C25D06 /* Modules */,
 				C1FAA2F52AB255C50072B7E7 /* Util */,
-				C18999582AB28577009EC23B /* Repositories */,
-				C1FAA2F82AB25C480072B7E7 /* UserDetail */,
-				C16C59752AB1E9AD00B2575E /* Home */,
 				C16C59452AB1E98C00B2575E /* AppDelegate.swift */,
 				C16C59472AB1E98C00B2575E /* SceneDelegate.swift */,
 				C16C594E2AB1E98E00B2575E /* Assets.xcassets */,
@@ -354,6 +368,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C1CED28A2AB337B000C25D06 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C18999582AB28577009EC23B /* Repositories */,
+				C1FAA2F82AB25C480072B7E7 /* UserDetail */,
+				C16C59752AB1E9AD00B2575E /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		C1D1F8A42AB22A1D00548639 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,9 +394,21 @@
 			path = GitHub;
 			sourceTree = "<group>";
 		};
+		C1DB415F2AB33A7100D3E650 /* ProgressHud */ = {
+			isa = PBXGroup;
+			children = (
+				C1DB41642AB33B5D00D3E650 /* happyLottery.json */,
+				C1DB41652AB33B5D00D3E650 /* loading_spinner.json */,
+				C1DB41662AB33B5D00D3E650 /* LottieAnimation.json */,
+				C1DB41602AB33AC300D3E650 /* ProgressHud.swift */,
+			);
+			path = ProgressHud;
+			sourceTree = "<group>";
+		};
 		C1FAA2F52AB255C50072B7E7 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				C1DB415F2AB33A7100D3E650 /* ProgressHud */,
 				C1FAA2F62AB255F80072B7E7 /* UIColor.swift */,
 				C1FAA3142AB281CA0072B7E7 /* String.swift */,
 			);
@@ -529,14 +565,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DB41672AB33B5D00D3E650 /* happyLottery.json in Resources */,
 				C1FAA30D2AB2622F0072B7E7 /* UserDetailView.xib in Resources */,
 				C189997E2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */,
 				C16C59922AB1FC3700B2575E /* .gitignore in Resources */,
 				C16C59522AB1E98E00B2575E /* LaunchScreen.storyboard in Resources */,
 				C16C594F2AB1E98E00B2575E /* Assets.xcassets in Resources */,
+				C1DB416A2AB33B5D00D3E650 /* loading_spinner.json in Resources */,
 				C1D1F8B52AB24BEA00548639 /* HomeTableViewCell.xib in Resources */,
 				C16C597F2AB1EE1800B2575E /* HomeView.xib in Resources */,
 				C18999722AB28CAB009EC23B /* RepositoriesView.xib in Resources */,
+				C1DB416D2AB33B5D00D3E650 /* LottieAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,9 +583,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DB416B2AB33B5D00D3E650 /* loading_spinner.json in Resources */,
+				C1DB416E2AB33B5D00D3E650 /* LottieAnimation.json in Resources */,
 				C1FAA30E2AB2622F0072B7E7 /* UserDetailView.xib in Resources */,
 				C189997F2AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */,
 				C16C59932AB1FC3700B2575E /* .gitignore in Resources */,
+				C1DB41682AB33B5D00D3E650 /* happyLottery.json in Resources */,
 				C1D1F8B62AB24BEA00548639 /* HomeTableViewCell.xib in Resources */,
 				C16C59802AB1EE1800B2575E /* HomeView.xib in Resources */,
 				C18999732AB28CAB009EC23B /* RepositoriesView.xib in Resources */,
@@ -557,9 +599,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DB416C2AB33B5D00D3E650 /* loading_spinner.json in Resources */,
+				C1DB416F2AB33B5D00D3E650 /* LottieAnimation.json in Resources */,
 				C1FAA30F2AB2622F0072B7E7 /* UserDetailView.xib in Resources */,
 				C18999802AB2954A009EC23B /* RepositoriesTableViewCell.xib in Resources */,
 				C16C59942AB1FC3700B2575E /* .gitignore in Resources */,
+				C1DB41692AB33B5D00D3E650 /* happyLottery.json in Resources */,
 				C1D1F8B72AB24BEA00548639 /* HomeTableViewCell.xib in Resources */,
 				C16C59812AB1EE1800B2575E /* HomeView.xib in Resources */,
 				C18999742AB28CAB009EC23B /* RepositoriesView.xib in Resources */,
@@ -632,6 +677,7 @@
 				C16C597B2AB1EDD000B2575E /* HomeViewController.swift in Sources */,
 				C189995E2AB286D0009EC23B /* Repository.swift in Sources */,
 				C1D1F8A92AB23D7A00548639 /* User.swift in Sources */,
+				C1DB41612AB33AC300D3E650 /* ProgressHud.swift in Sources */,
 				C1FAA3152AB281CA0072B7E7 /* String.swift in Sources */,
 				C1FAA2F72AB255F80072B7E7 /* UIColor.swift in Sources */,
 				C18999622AB28876009EC23B /* RepositoriesViewModel.swift in Sources */,
@@ -648,6 +694,7 @@
 				C1FAA3012AB25DCF0072B7E7 /* UserDetailViewModel.swift in Sources */,
 				C16C595D2AB1E98F00B2575E /* desafio_carrefourTests.swift in Sources */,
 				C189996F2AB28C97009EC23B /* RepositoriesViewController.swift in Sources */,
+				C1DB41622AB33AC300D3E650 /* ProgressHud.swift in Sources */,
 				C189997C2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */,
 				C189995F2AB286D0009EC23B /* Repository.swift in Sources */,
 				C1FAA30A2AB261800072B7E7 /* UserDetailViewController.swift in Sources */,
@@ -675,6 +722,7 @@
 				C1FAA3022AB25DCF0072B7E7 /* UserDetailViewModel.swift in Sources */,
 				C16C59692AB1E98F00B2575E /* desafio_carrefourUITestsLaunchTests.swift in Sources */,
 				C18999702AB28C97009EC23B /* RepositoriesViewController.swift in Sources */,
+				C1DB41632AB33AC300D3E650 /* ProgressHud.swift in Sources */,
 				C189997D2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */,
 				C18999602AB286D0009EC23B /* Repository.swift in Sources */,
 				C1FAA30B2AB261800072B7E7 /* UserDetailViewController.swift in Sources */,
