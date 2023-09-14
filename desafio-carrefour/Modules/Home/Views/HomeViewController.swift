@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         self.viewModel?.fetchUsers()
 
         self.setupTableView()
-        self.filterTextField.addTarget(self, action: #selector(filterTextFieldDidChange(_:)), for: .editingChanged)
+        self.filterTextField?.addTarget(self, action: #selector(filterTextFieldDidChange(_:)), for: .editingChanged)
     }
     
     @objc func filterTextFieldDidChange(_ textField: UITextField) {
