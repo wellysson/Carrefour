@@ -1,4 +1,4 @@
-# Carrefour
+![image](https://github.com/wellysson/Carrefour/assets/3710157/f21b9ebf-23fe-49bd-ace2-51431d7ae200)# Carrefour
 Dasafio
 
 Aplicativo referente ao desafio
@@ -10,4 +10,4 @@ Para execução basta seguir os passos
 3) Executar o comando Codoapods
     * pod install, na raiz do projeto.
    
-5) Abrir o arquivo "desafio-carrefour.xcworkspace", de preferênça em um XCode mais atualizado.
+5) Abrir o arquivo "desafio-carrefour.xcworkspace", de preferência em um XCode mais atualizado.
