@@ -40,9 +40,21 @@ class UserDetailViewController: UIViewController {
         self.twitterLabel.text = self.viewModel?.twitterUsername
         self.repoCountLabel.text = "\(self.viewModel?.publicRepos ?? 0)"
         self.folowersLabel.text = "\(self.viewModel?.followers ?? 0)"
-        self.createdLabel.text = self.viewModel?.createdAt
-        self.updatedLabel.text = self.viewModel?.updatedAt
+        if let createdAt = self.viewModel?.createdAt {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy hh:mm:ss"
+            self.createdLabel.text = dateFormatter.string(from: createdAt.toDate()!)
+        }
+        if let updatedAt = self.viewModel?.updatedAt {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy hh:mm:ss"
+            self.updatedLabel.text = dateFormatter.string(from: updatedAt.toDate()!)
+        }
         self.bioLabel.text = self.viewModel?.bio
+    }
+    @IBAction func buttonAction(_ sender: Any) {
+        guard let userDetail = self.viewModel else { return }
+        self.viewModel?.navigateToRepositories(user: userDetail)
     }
     
 }

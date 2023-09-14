@@ -12,7 +12,7 @@ protocol UserDetailViewModelDelegate: AnyObject {
 }
 
 class UserDetailViewModel {
-    var login: String?
+    var login: String
     var id: Int?
     var avatarUrl: URL?
     var htmlUrl: URL?
@@ -38,7 +38,6 @@ class UserDetailViewModel {
     }
     
     func updateData(userDetail: UserDetail) {
-        self.login = userDetail.login
         self.id = userDetail.id
         self.avatarUrl = userDetail.avatarUrl
         self.htmlUrl = userDetail.htmlUrl
@@ -54,16 +53,19 @@ class UserDetailViewModel {
         self.followers = userDetail.followers
         self.following = userDetail.following
         self.createdAt = userDetail.createdAt
-        self.updatedAt = userDetail.createdAt
+        self.updatedAt = userDetail.updatedAt
     }
     
     func fetchUserDetail() {
-        guard let login = self.login else { return }
         GitHubAPI.getUserDetail(userLogin: login, completion: { [weak self] userDetail in
             guard let self = self else { return }
             
             self.updateData(userDetail: userDetail)
             self.delegate?.reloadData()
         })
+    }
+    
+    func navigateToRepositories(user: UserDetailViewModel) {
+        coordinator?.navigateToRepositories(user: user)
     }
 }

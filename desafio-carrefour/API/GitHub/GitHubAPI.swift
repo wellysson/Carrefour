@@ -14,22 +14,16 @@ class GitHubAPI {
         AF.request("https://api.github.com/users").responseJSON { response in
             switch response.result {
             case .success(let value):
-                do {
-                    if let users = Mapper<User>().mapArray(JSONObject: value) {
-                        completion(users)
-                    } else {
-                        print("Erro ao fazer o mapeamento JSON")
-                    }
-               } catch {
-                   print("Erro ao fazer o parse JSON: \(error)")
-               }
+                if let users = Mapper<User>().mapArray(JSONObject: value) {
+                    completion(users)
+                } else {
+                    print("Erro ao fazer o mapeamento JSON")
+                }
             case .failure(let error):
                 print("Erro: \(error)")
             }
-//            print("Request: \(String(describing: response.request))")
-//            print("Response: \(String(describing: response.response))")
-//            print("Result: \(response.result)")
-                        
+            print("Request: \(String(describing: response.request))")
+            print("Result: \(response.result)")
         }
     }
     
@@ -37,21 +31,33 @@ class GitHubAPI {
         AF.request("https://api.github.com/users/\(userLogin)").responseJSON { response in
             switch response.result {
             case .success(let value):
-                do {
-                    if let userDetail = Mapper<UserDetail>().map(JSONObject: value) {
-                        completion(userDetail)
-                    } else {
-                        print("Erro ao fazer o mapeamento JSON")
-                    }
-               } catch {
-                   print("Erro ao fazer o parse JSON: \(error)")
-               }
+                if let userDetail = Mapper<UserDetail>().map(JSONObject: value) {
+                    completion(userDetail)
+                } else {
+                    print("Erro ao fazer o mapeamento JSON")
+                }
             case .failure(let error):
                 print("Erro: \(error)")
             }
-//            print("Request: \(String(describing: response.request))")
-//            print("Response: \(String(describing: response.response))")
-//            print("Result: \(response.result)")
+            print("Request: \(String(describing: response.request))")
+            print("Result: \(response.result)")
+        }
+    }
+    
+    static func getRepositories(userLogin: String, completion: @escaping ([Repository]) -> Void) {
+        AF.request("https://api.github.com/users/\(userLogin)/repos").responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                if let repositories = Mapper<Repository>().mapArray(JSONObject: value) {
+                    completion(repositories)
+                } else {
+                    print("Erro ao fazer o mapeamento JSON")
+                }
+            case .failure(let error):
+                print("Erro: \(error)")
+            }
+            print("Request: \(String(describing: response.request))")
+            print("Result: \(response.result)")
                         
         }
     }

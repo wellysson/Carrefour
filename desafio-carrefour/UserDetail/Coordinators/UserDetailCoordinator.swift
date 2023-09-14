@@ -10,6 +10,7 @@ import UIKit
 
 class UserDetailCoordinator {
     weak var navigationController: UINavigationController?
+    var repositoriesCoordinator: RepositoriesCoordinator?
     var login: String
 
     init(navigationController: UINavigationController?, login: String) {
@@ -24,5 +25,10 @@ class UserDetailCoordinator {
         userDetailView.viewModel = userDetailViewModel
         
         navigationController?.pushViewController(userDetailView, animated: true)
+    }
+    
+    func navigateToRepositories(user: UserDetailViewModel) {
+        self.repositoriesCoordinator = RepositoriesCoordinator(navigationController: self.navigationController, login: user.login)
+        self.repositoriesCoordinator?.start()
     }
 }
