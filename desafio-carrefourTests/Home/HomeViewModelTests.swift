@@ -10,44 +10,16 @@ import XCTest
 
 class HomeViewModelTests: XCTestCase {
     
-    // Mock para simular o comportamento do Coordinator e do Delegate
-    class MockCoordinator: HomeCoordinator {
-        var callNavigateToUser = false
-        // Implemente os métodos necessários para os testes
-        override func navigateToUser(user: UserViewModel) {
-            self.callNavigateToUser = true
-        }
-    }
-    
-    class MockDelegate: HomeViewModelDelegate {
-        var reloadDataCalled = false
-        
-        func reloadData() {
-            reloadDataCalled = true
-        }
-    }
-    
-    class MockHomeViewModel: HomeViewModel {
-        func setUsersMock(users: [UserViewModel]) {
-            self.users = users
-        }
-        override func fetchUsers() {
-            if !(self.users?.isEmpty ?? true) {
-                self.delegate?.reloadData()
-            }
-        }
-    }
-    
     var window: UIWindow!
     var mockViewModel: MockHomeViewModel!
-    var mockCoordinator: MockCoordinator!
+    var mockCoordinator: MockHomeCoordinator!
     var mockDelegate: MockDelegate!
     
     override func setUpWithError() throws {
         super.setUp()
         self.window = UIWindow(frame: UIScreen.main.bounds)
         mockViewModel = MockHomeViewModel()
-        mockCoordinator = MockCoordinator(window: self.window)
+        mockCoordinator = MockHomeCoordinator(window: self.window)
         mockDelegate = MockDelegate()
         
         mockViewModel.coordinator = mockCoordinator

@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 class HomeCoordinator {
-    private let window: UIWindow
-    private var navigationController: UINavigationController?
+    let window: UIWindow
+    var navigationController: UINavigationController?
     var userDetailCoordinator: UserDetailCoordinator?
 
     init(window: UIWindow) {

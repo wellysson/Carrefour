@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5797F558A52FFAE5B472467F /* Pods_desafio_carrefour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6F525D84961467CA8E96DC /* Pods_desafio_carrefour.framework */; };
+		C11F9FF92AB376E2001F2E68 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F9FF82AB376E2001F2E68 /* HomeViewControllerTests.swift */; };
+		C11F9FFB2AB37787001F2E68 /* MocksHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F9FFA2AB37787001F2E68 /* MocksHome.swift */; };
+		C11F9FFD2AB381D7001F2E68 /* HomeTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F9FFC2AB381D7001F2E68 /* HomeTableViewCellTests.swift */; };
+		C11FA0002AB385C9001F2E68 /* UserDetailCoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F9FFF2AB385C9001F2E68 /* UserDetailCoordinatorTest.swift */; };
+		C11FA0022AB387BB001F2E68 /* MocksUserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FA0012AB387BB001F2E68 /* MocksUserDetail.swift */; };
 		C16C59462AB1E98C00B2575E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C59452AB1E98C00B2575E /* AppDelegate.swift */; };
 		C16C59482AB1E98C00B2575E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C59472AB1E98C00B2575E /* SceneDelegate.swift */; };
 		C16C594F2AB1E98E00B2575E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16C594E2AB1E98E00B2575E /* Assets.xcassets */; };
@@ -123,6 +128,11 @@
 /* Begin PBXFileReference section */
 		0B30EF3CC4737B9F011F5905 /* Pods-desafio-carrefour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-carrefour.release.xcconfig"; path = "Target Support Files/Pods-desafio-carrefour/Pods-desafio-carrefour.release.xcconfig"; sourceTree = "<group>"; };
 		789BAD97CB812D37B2E3BE8D /* Pods-desafio-carrefour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-carrefour.debug.xcconfig"; path = "Target Support Files/Pods-desafio-carrefour/Pods-desafio-carrefour.debug.xcconfig"; sourceTree = "<group>"; };
+		C11F9FF82AB376E2001F2E68 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		C11F9FFA2AB37787001F2E68 /* MocksHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocksHome.swift; sourceTree = "<group>"; };
+		C11F9FFC2AB381D7001F2E68 /* HomeTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCellTests.swift; sourceTree = "<group>"; };
+		C11F9FFF2AB385C9001F2E68 /* UserDetailCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCoordinatorTest.swift; sourceTree = "<group>"; };
+		C11FA0012AB387BB001F2E68 /* MocksUserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocksUserDetail.swift; sourceTree = "<group>"; };
 		C16C59422AB1E98C00B2575E /* desafio-carrefour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-carrefour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16C59452AB1E98C00B2575E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C16C59472AB1E98C00B2575E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +212,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C11F9FFE2AB385A5001F2E68 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C11F9FFF2AB385C9001F2E68 /* UserDetailCoordinatorTest.swift */,
+				C11FA0012AB387BB001F2E68 /* MocksUserDetail.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 		C16C59392AB1E98C00B2575E = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +262,7 @@
 		C16C595B2AB1E98F00B2575E /* desafio-carrefourTests */ = {
 			isa = PBXGroup;
 			children = (
+				C11F9FFE2AB385A5001F2E68 /* UserDetail */,
 				C16C598A2AB1F20800B2575E /* Home */,
 				C16C595C2AB1E98F00B2575E /* desafio_carrefourTests.swift */,
 			);
@@ -308,8 +328,11 @@
 		C16C598A2AB1F20800B2575E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C11F9FFA2AB37787001F2E68 /* MocksHome.swift */,
 				C16C598B2AB1F26D00B2575E /* HomeCoordinatorTests.swift */,
 				C1B9D3692AB368930082D831 /* HomeViewModelTests.swift */,
+				C11F9FF82AB376E2001F2E68 /* HomeViewControllerTests.swift */,
+				C11F9FFC2AB381D7001F2E68 /* HomeTableViewCellTests.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -694,8 +717,10 @@
 				C1DB41622AB33AC300D3E650 /* ProgressHud.swift in Sources */,
 				C1B9D36A2AB368930082D831 /* HomeViewModelTests.swift in Sources */,
 				C189997C2AB2954A009EC23B /* RepositoriesTableViewCell.swift in Sources */,
+				C11F9FFD2AB381D7001F2E68 /* HomeTableViewCellTests.swift in Sources */,
 				C189995F2AB286D0009EC23B /* Repository.swift in Sources */,
 				C1FAA30A2AB261800072B7E7 /* UserDetailViewController.swift in Sources */,
+				C11FA0022AB387BB001F2E68 /* MocksUserDetail.swift in Sources */,
 				C1B9D3672AB366A40082D831 /* GitHubAPI.swift in Sources */,
 				C16C598C2AB1F26D00B2575E /* HomeCoordinatorTests.swift in Sources */,
 				C1FAA3162AB281CA0072B7E7 /* String.swift in Sources */,
@@ -705,9 +730,12 @@
 				C16C59842AB1EF3800B2575E /* HomeCoordinator.swift in Sources */,
 				C1FAA3052AB25DDF0072B7E7 /* UIColor.swift in Sources */,
 				C18999772AB28E1F009EC23B /* RepositoriesCoordinator.swift in Sources */,
+				C11F9FFB2AB37787001F2E68 /* MocksHome.swift in Sources */,
+				C11F9FF92AB376E2001F2E68 /* HomeViewControllerTests.swift in Sources */,
 				C1D1F8AE2AB2483C00548639 /* UserViewModel.swift in Sources */,
 				C1D1F8B32AB24BEA00548639 /* HomeTableViewCell.swift in Sources */,
 				C1FAA3122AB262E00072B7E7 /* UserDetailCoordinator.swift in Sources */,
+				C11FA0002AB385C9001F2E68 /* UserDetailCoordinatorTest.swift in Sources */,
 				C16C59882AB1F0C100B2575E /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
